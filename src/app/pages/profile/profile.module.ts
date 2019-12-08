@@ -18,7 +18,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
+    IonicModule,    
+    SharedModule,
     RouterModule.forChild(routes)
   ],
   declarations: [ProfilePage]
