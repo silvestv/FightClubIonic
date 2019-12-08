@@ -12,13 +12,15 @@ import { AppComponent } from './app.component';
 //Modal
 import { ViewDetailsPageModule } from './components/view-details/view-details.module';
 
-
-
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,ViewDetailsPageModule],
+  imports: [
+    BrowserModule,
+     IonicModule.forRoot(),
+      AppRoutingModule,
+      ViewDetailsPageModule,
+    ],
   providers: [
     StatusBar,
     SplashScreen,

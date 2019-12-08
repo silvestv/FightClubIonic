@@ -3,11 +3,11 @@ import { CardProfileComponent } from '../shared/card-profile/card-profile.compon
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-tabs',
-  templateUrl: 'tabs.page.html',
-  styleUrls: ['tabs.page.scss']
+  selector: 'app-footer',
+  templateUrl: 'footer.page.html',
+  styleUrls: ['footer.page.scss']
 })
-export class TabsPage {
+export class FooterPage {
 
   constructor(public cardcomp:CardProfileComponent,public alertController: AlertController) {}
 
@@ -19,7 +19,7 @@ swipeLeft(e){
  swipeRight(e){
   let card = document.getElementById("swipecard");
   this.triggerEvent(card, 'swipeRightperso');
- }
+ } 
 
  triggerEvent(el, type){
     // modern browsers, IE9+
