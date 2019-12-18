@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {Router} from "@angular/router";
-import {IonContent} from "@ionic/angular";
+import {Router} from '@angular/router';
+import {IonContent} from '@ionic/angular';
 
 @Component({
   selector: 'app-discuss',
@@ -40,9 +40,9 @@ export class DiscussPage implements OnInit {
       createdAt: 1554090856000,
       msg: 'Vas y tu ma fais peur je rage-quit'
     }
-  ]
+  ];
 
-  currentUser:string = 'Sadok VNR';
+  currentUser = 'Sadok VNR';
   newMsg = '';
   @ViewChild(IonContent, {static: false}) content: IonContent;
 
@@ -58,7 +58,7 @@ export class DiscussPage implements OnInit {
     this.route.navigate(['/profile']);
   }
 
-  sendMessage(){
+  sendMessage() {
     this.messages.push({
       user: 'Sadok VNR',
       createdAt: new Date().getTime(),

@@ -7,8 +7,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { MessagesPage } from './messages.page';
 import {MessComponent} from '../../components/mess/mess.component';
-import {FilActComponent} from "../../components/fil-act/fil-act.component";
+import {FilActComponent} from '../../components/fil-act/fil-act.component';
 
+import { SharedModule } from 'src/app/shared/shared.module';
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     RouterModule.forChild(routes)
   ],
   declarations: [MessagesPage, MessComponent, FilActComponent]
